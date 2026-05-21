@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Abdulrhman Alsammak — personal profile, projects, experience, and contact."
+    />
+    <title>Profile | Abdulrhman Alsammak</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=13" />
+  </head>
+  <body>
+    <!-- Netlify reads this at deploy time so "contact" shows under Forms -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-top">
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a
+          class="logo"
+          href="#"
+          aria-label="Abdulrhman Alsammak — home"
+        >
+          <svg
+            class="logo-mark"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            role="img"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient
+                id="logoMarkGrad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#6ee7ff" />
+                <stop offset="100%" stop-color="#22d3ee" />
+              </linearGradient>
+            </defs>
+            <rect
+              x="1"
+              y="1"
+              width="38"
+              height="38"
+              rx="11"
+              fill="#121826"
+              stroke="url(#logoMarkGrad)"
+              stroke-width="1.5"
+            />
+            <path
+              d="M12 29 L20 11 L28 29 M14.5 22h11"
+              fill="none"
+              stroke="url(#logoMarkGrad)"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <label class="burger" for="burger-toggle" aria-label="Open menu">
+          <input type="checkbox" id="burger-toggle" data-nav-toggle aria-controls="site-nav" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </header>
+
+    <nav class="site-nav" id="site-nav" data-nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li>
+          <a href="#contact" class="animated-button animated-button--nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="arr-1"
+              aria-hidden="true"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="arr-2"
+              aria-hidden="true"
+            >
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              />
+            </svg>
+            <span class="circle" aria-hidden="true"></span>
+            <span class="text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <p class="hero-kicker" data-reveal>Hello, I’m</p>
+          <h1 id="hero-title" class="hero-title" data-reveal>
+            Abdulrhman Alsammak<span class="hero-title-accent">.</span>
+          </h1>
+          <p class="hero-subtitle" data-reveal>
+            Designer &amp; developer building thoughtful digital products. I
+            care about clarity, performance, and the people on the other side of
+            the screen.
+          </p>
+          <div class="hero-actions" data-reveal>
+            <a class="animated-button" href="#projects">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arr-1" aria-hidden="true">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arr-2" aria-hidden="true">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+              </svg>
+              <span class="circle" aria-hidden="true"></span>
+              <span class="text">View work</span>
+            </a>
+            <a class="animated-button" href="#contact">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arr-1" aria-hidden="true">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arr-2" aria-hidden="true">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+              </svg>
+              <span class="circle" aria-hidden="true"></span>
+              <span class="text">Get in touch</span>
+            </a>
+          </div>
+          <dl class="hero-stats" data-reveal>
+            <div>
+              <dt>Age</dt>
+              <dd>14</dd>
+            </div>
+            <div>
+              <dt>Projects</dt>
+              <dd>1+</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <h2 id="about-title" class="section-title">About</h2>
+          </header>
+          <div class="about-grid">
+            <div class="about-card" data-reveal>
+              <h3>Who I am</h3>
+              <p>
+                I’m a creative technologist based in your Jeddah City. I’ve spent the
+                last few years shipping interfaces, tightening design systems,
+                and collaborating with teams who want their work to feel
+                intentional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="section experience"
+        aria-labelledby="exp-title"
+      >
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <h2 id="exp-title" class="section-title">Experience</h2>
+            <p class="section-lead">Roles that shaped how I build today.</p>
+          </header>
+          <ol class="timeline" data-reveal>
+            <li class="timeline-item">
+              <span class="timeline-date">2023 — Present</span>
+              <h3>Senior Product Engineer</h3>
+              <p class="timeline-org">Company Name</p>
+              <p>
+                Led frontend architecture for a customer-facing app; mentored
+                juniors; partnered with design on a refreshed component library.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-date">2020 — 2023</span>
+              <h3>Full-stack Developer</h3>
+              <p class="timeline-org">Another Studio</p>
+              <p>
+                Built dashboards and APIs; improved Core Web Vitals by 40% on key
+                landing pages through lazy loading and image optimization.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-date">2018 — 2020</span>
+              <h3>Junior Developer</h3>
+              <p class="timeline-org">First Agency</p>
+              <p>
+                Cut my teeth on client sites, email templates, and WordPress —
+                learned to estimate, communicate, and ship on deadline.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="section projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <h2 id="projects-title" class="section-title">Projects</h2>
+            <p class="section-lead">Selected work — swap in your real case studies.</p>
+          </header>
+          <ul class="project-grid">
+            <li class="project-card" data-reveal>
+              <div class="project-card-top">
+                <span class="project-tag">Web app</span>
+                <h3>Atlas Dashboard</h3>
+              </div>
+              <p>
+                Analytics dashboard with role-based views, exportable reports,
+                and a dark-first UI tuned for long sessions.
+              </p>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Live demo</a>
+                <a href="#" class="link-arrow muted">Source</a>
+              </div>
+            </li>
+            <li class="project-card" data-reveal>
+              <div class="project-card-top">
+                <span class="project-tag">Design system</span>
+                <h3>Lumen UI Kit</h3>
+              </div>
+              <p>
+                Token-based design system shared between Figma and code — reduced
+                design–dev handoff time for a product team of twelve.
+              </p>
+              <div class="project-links">
+                <a href="#" class="link-arrow">Case study</a>
+              </div>
+            </li>
+            <li class="project-card" data-reveal>
+              <div class="project-card-top">
+                <span class="project-tag">Open source</span>
+                <h3>CLI Helper</h3>
+              </div>
+              <p>
+                Small Node CLI that scaffolds projects with sensible defaults —
+                documentation-first, zero global installs required.
+              </p>
+              <div class="project-links">
+                <a href="#" class="link-arrow">npm</a>
+                <a href="#" class="link-arrow muted">GitHub</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="certificates"
+        class="section certificates"
+        aria-labelledby="certificates-title"
+      >
+        <div class="container">
+          <header class="section-head" data-reveal>
+            <h2 id="certificates-title" class="section-title">Certificates</h2>
+            <p class="section-lead">
+              Credentials from my coding journey — more coming soon.
+            </p>
+          </header>
+          <ul class="certificate-grid">
+            <!-- Replace placeholders when you add real certificates -->
+            <li class="certificate-card" data-reveal>
+              <article class="certificate-card-inner">
+                <div class="certificate-card-media certificate-card-media--empty">
+                  <span class="certificate-placeholder" aria-hidden="true">📜</span>
+                  <span class="certificate-placeholder-text">Your certificate image</span>
+                </div>
+                <div class="certificate-card-body">
+                  <span class="certificate-tag">Provider</span>
+                  <h3>Certificate title</h3>
+                  <p class="certificate-meta">Year · Topic</p>
+                  <a href="#" class="link-arrow certificate-link">View certificate</a>
+                </div>
+              </article>
+            </li>
+            <li class="certificate-card" data-reveal>
+              <article class="certificate-card-inner">
+                <div class="certificate-card-media certificate-card-media--empty">
+                  <span class="certificate-placeholder" aria-hidden="true">📜</span>
+                  <span class="certificate-placeholder-text">Your certificate image</span>
+                </div>
+                <div class="certificate-card-body">
+                  <span class="certificate-tag">Provider</span>
+                  <h3>Certificate title</h3>
+                  <p class="certificate-meta">Year · Topic</p>
+                  <a href="#" class="link-arrow certificate-link">View certificate</a>
+                </div>
+              </article>
+            </li>
+            <li class="certificate-card" data-reveal>
+              <article class="certificate-card-inner">
+                <div class="certificate-card-media certificate-card-media--empty">
+                  <span class="certificate-placeholder" aria-hidden="true">📜</span>
+                  <span class="certificate-placeholder-text">Your certificate image</span>
+                </div>
+                <div class="certificate-card-body">
+                  <span class="certificate-tag">Provider</span>
+                  <h3>Certificate title</h3>
+                  <p class="certificate-meta">Year · Topic</p>
+                  <a href="#" class="link-arrow certificate-link">View certificate</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <header class="section-head" data-reveal>
+            <h2 id="contact-title" class="section-title">Contact</h2>
+            <p class="section-lead">
+              Say hello — connect on socials or send a message below.
+            </p>
+          </header>
+          <div class="contact-grid" data-reveal>
+            <div class="contact-card">
+              <h3>Direct</h3>
+              <a class="contact-email" href="mailto:alsammakabdulrhman1@gmail.com"
+                >alsammakabdulrhman1@gmail.com</a
+              >
+              <p class="contact-note">
+                I usually reply within two business days.
+              </p>
+            </div>
+            <ul class="social-list">
+              <li>
+                <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com" rel="noopener noreferrer" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com" rel="noopener noreferrer" target="_blank"
+                  >X / Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form
+            class="contact-form"
+            data-reveal
+            name="contact"
+            method="POST"
+            netlify
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thank-you.html"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="sr-only">
+              <label>Do not fill this out: <input name="bot-field" /></label>
+            </p>
+            <p class="form-hint">
+              Your message is saved securely. I’ll see it in my site dashboard.
+              For a direct email, use
+              <a href="mailto:alsammakabdulrhman1@gmail.com">alsammakabdulrhman1@gmail.com</a>.
+            </p>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button class="animated-button" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arr-1" aria-hidden="true">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arr-2" aria-hidden="true">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+              </svg>
+              <span class="circle" aria-hidden="true"></span>
+              <span class="text">Send message</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-copy">
+            © <span data-year></span> Abdulrhman Alsammak. Built with plain HTML, CSS &amp; JS.
+          </p>
+          <p class="footer-revision">Live site package v11 — hero title &amp; grids refreshed.</p>
+        </div>
+        <a class="footer-top" href="#">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=10"></script>
+  </body>
+</html>
